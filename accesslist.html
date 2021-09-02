@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'b1.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>accesslist</title>
+</head>
+<body>
+<h1>access list of book</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Accesslist">
+
+</form>
+</body>
+</html>
+{% endblock content %}

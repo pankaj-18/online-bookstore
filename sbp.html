@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'b1.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search of purchase book</title>
+</head>
+<body>
+<h1>search of purchase book</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="searchpurchasebook">
+
+</form>
+</body>
+</html>
+{% endblock content %}
